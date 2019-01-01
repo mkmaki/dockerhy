@@ -1,0 +1,20 @@
+# It took 0.065 seconds.
+version: '3'
+
+services:
+   frontend:
+     build: .
+     image: front
+     ports:
+       - 5000:5000
+   backend:
+     build: .
+     image: back
+     environment:
+      - 'REDIS=localhost' 
+     ports:
+      - 8000:8000
+     depends_on:
+      - redis
+   redis:
+     image: redis
