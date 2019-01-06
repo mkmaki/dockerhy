@@ -1,0 +1,5 @@
+docker images
+
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+back_optimized        latest              5eca29d156d3        35 seconds ago      402MB
+back                  latest              b9a409f81eec        6 days ago          547MB
