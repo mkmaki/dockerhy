@@ -31,7 +31,7 @@ services:
    postgres:
      image: postgres
      environment:
-      - 'POSTGRES_PASSWORD=mysecretpassword'
+      - 'POSTGRES_PASSWORD=mysecretpassword123'
      volumes:
       - ./pgdata:/var/lib/postgresql/data
 
